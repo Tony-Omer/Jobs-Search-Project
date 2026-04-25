@@ -7,7 +7,7 @@ const JOBPOSTS = () => {
      <div className="job-post">
 
 
-       <div className="firstBox">
+       <div className="firstBox box">
 
                     <div className="image">
                         <i className="fa-solid fa-building building"></i>
@@ -22,7 +22,7 @@ const JOBPOSTS = () => {
 
 
 
-       <div className="secondBox">
+       <div className="secondBox box">
 
              <div className="jobDescription">
                 <i className="fa-regular fa-file-lines file"></i>
@@ -37,7 +37,7 @@ const JOBPOSTS = () => {
 
 
 
-       <div className="thirdBox">
+       <div className="thirdBox box">
 
         <h2>Key Responsibilities</h2>
 
@@ -48,22 +48,36 @@ const JOBPOSTS = () => {
 
 
 
-       <div className="requirements">
+       <div className="fourthBox box">
 
         <h2>Requirements</h2>
 
-        <p></p>
+        <p>background in software development or any related field</p>
        </div>
 
 
 
        
-       <div className="fourthBox">
+       <div className="fifthBox ">
 
-        <div className="salary"></div>
+        <div className="salary">
+            <span>
+                <i className="fa-solid fa-sack-dollar salary-icon"></i>
+                <p>Salary</p>
+            </span>
+
+            <p>Based on experience and skills</p>
+        </div>
 
 
-        <div className="location"></div>
+        <div className="location">
+            <span>
+                <i className="fa-solid fa-location-dot location-icon"></i>
+                <p>Location</p>
+            </span>
+
+            <p id="location">UAE</p>
+        </div>
 
        </div>
 

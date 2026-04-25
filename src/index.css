@@ -522,7 +522,6 @@ html, body {
 
 .job-post .secondBox .jobDescription h2 {
   color: #0230d8;
-  margin-left: 7px;
   text-align: left;
   font-size: 20px;
   
@@ -534,7 +533,7 @@ html, body {
   margin-left: 10px;
   text-align: left;
   font-size: 17px;
-  
+  color: #0230d8;
 }
  
 
@@ -554,6 +553,7 @@ html, body {
     color: #0230d8;
     margin-top: 10px;
     margin-left: 20px;
+    font-size: 20px;
   }
 
   .job-post .thirdBox p {
@@ -564,14 +564,114 @@ html, body {
 
 
 
+  .job-post .fourthBox {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+  .job-post .fourthBox h2 {
+    color: #0230d8;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+
+   .job-post .fourthBox p {
+    color: #0230d8;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 
 
 
 
+.job-post .box:hover {
+  box-shadow: 4px 4px 10px #5c7fff;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+
+
+.job-post .fifthBox {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+  
+
+}
+
+
+.job-post .fifthBox .salary {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+}
+
+.job-post .fifthBox .salary:hover {
+  box-shadow: 4px 4px 10px gray;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
 
 
 
+.job-post .fifthBox .location {
+  background: transparent;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
 
 
+.job-post .fifthBox .location:hover {
+  box-shadow: 4px 4px 10px gray;
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
 
+
+.job-post .fifthBox span{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: green;
+  font-size: 20px;
+  
+}
+  
+
+.job-post .fifthBox .location-icon {
+  color: rgb(222, 22, 22);
+  font-size: 20px;
+  background-color: white;
+  
+}
+
+
+.job-post .fifthBox span p {
+  color: black;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+}
 
