@@ -1,8 +1,10 @@
 import NAVBAR from './components/navbar'
 import FRONTPAGE from './components/frontpage'
 import OPTIONS from './components/options'
-import JOBPOSTS from './components/jobposts'
 import JOBHEADER from './components/job-header'
+import JOBPOSTS from './components/JOBPOSTS'
+import REGISTER from './components/register'
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <OPTIONS />
       <JOBHEADER />
       <JOBPOSTS />
+      <REGISTER />
 
     </div>
    

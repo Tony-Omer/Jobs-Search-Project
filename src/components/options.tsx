@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const OPTIONS = () => {
     return (
         <div>
@@ -9,9 +11,10 @@ const OPTIONS = () => {
                     Get the best candidates for your job openings. Post your job listings and access a pool of qualified job seekers. 
                     Find the perfect match for your company and grow your team with ease.
                 </p>
-                <a href="/employer">
+                {/* Changed <a> to <Link> and href to to */}
+                <Link to="/employer">
                     Post a Job
-                </a>
+                </Link>
                </div>
 
 
@@ -23,9 +26,10 @@ const OPTIONS = () => {
                     Search for your dream job and connect with employers who are looking for
                      talented professionals like you.
                 </p>
-                <a href="/jobs">
+                {/* Changed <a> to <Link> and href to to */}
+                <Link to="/jobs">
                     Find a Job
-                </a>
+                </Link>
                 </div>
 
 

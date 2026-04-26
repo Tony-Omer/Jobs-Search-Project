@@ -1,4 +1,5 @@
-const JOBPOSTS = () => {
+
+const jobPosts = () => {
     return (
         <div>
 
@@ -17,6 +18,7 @@ const JOBPOSTS = () => {
                         <h1>Software Engineer</h1>
                         <p className="company">Here you can find all the latest job postings.</p>
                     </div>
+
 
        </div>
 
@@ -105,4 +107,4 @@ const JOBPOSTS = () => {
     );
 };
 
-export default JOBPOSTS;
+export default jobPosts;
