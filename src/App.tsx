@@ -4,24 +4,27 @@ import FRONTPAGE from './components/frontpage';
 import OPTIONS from './components/options';
 import JOBHEADER from './components/job-header';
 import JOBPOSTS from './components/JOBPOSTS';
-import employer from './components/employer'; // Renamed to REGISTER for clarity
+import Employer from './components/Employer'; // Capitalized the 'E'
 
 function App() {
   return (
     <div>
-      {/* 1. Components that should ALWAYS show (like a header) go OUTSIDE Routes */}
+      {/* NAVBAR stays visible on every single page */}
       <NAVBAR />
-      <FRONTPAGE />
-      <JOBHEADER />
-      <JOBPOSTS />
-      <OPTIONS />
-      
 
       <Routes>
+        {/* The Home Route: Groups all home components together */}
+        <Route path="/" element={
+          <>
+            <FRONTPAGE />
+            <JOBHEADER />
+            <JOBPOSTS />
+            <OPTIONS />
+          </>
+        } />
 
-        {/* 3. The "Employer" Page Route */}
-        {/* When the URL is /employer, it hides the home components and shows this: */}
-        <Route path="/employer" element={ <employer /> } />
+        {/* The Employer Route: Only shows the Employer component */}
+        <Route path="/employer" element={<Employer />} /> 
       </Routes>
     </div>
   );
