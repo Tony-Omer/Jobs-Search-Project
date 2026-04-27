@@ -810,3 +810,43 @@ html, body {
   font-weight: bold;
   font-style: italic;
 }
+
+
+
+
+
+
+
+
+.form-submit-button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: rgb(23, 185, 23); /* Modern Indigo */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 4px 6px -1px rgba(70, 229, 89, 0.426);
+    margin-top: 1rem;
+}
+
+.form-submit-button:hover {
+    background-color: rgb(5, 148, 5);
+    box-shadow: 2px 4px 6px -1px rgba(70, 229, 89, 0.426);
+    transform: translateY(-1px);
+}
+
+.form-submit-button:active {
+    transform: translateY(0);
+    background-color: rgb(17, 106, 17);
+    box-shadow: none;
+}
+
+.form-submit-button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(17, 106, 17);
+}

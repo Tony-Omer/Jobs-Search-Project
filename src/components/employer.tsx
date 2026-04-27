@@ -93,7 +93,7 @@ const REGISTER = () => {
                     <textarea name="requirements" value={formData.requirements} onChange={handleChange} />
                 </div>
 
-                <button type="submit">Save Job to Database</button>
+                <button type="submit" className='form-submit-button'>Save Job to Database</button>
             </form>
         </div>
     );
