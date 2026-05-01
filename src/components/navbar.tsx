@@ -15,11 +15,7 @@ function NAVBAR() {
       </a>
 
 
-     {/* Search Bar */}
-      <div className="search-container">
-        <input type="text" placeholder="Search for jobs..." />
-        <button type="submit">Search</button>
-      </div>
+     
 
 
 

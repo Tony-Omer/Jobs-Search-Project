@@ -19,7 +19,7 @@ const OPTIONS = () => {
                 <p>
                     Search for your dream job and connect with employers who are looking for talented professionals.
                 </p>
-                <Link to="/jobs" className="btn">
+                <Link to="/jobfind" className="btn">
                     Find a Job
                 </Link>
             </div>

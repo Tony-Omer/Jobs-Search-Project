@@ -22,7 +22,7 @@ const REGISTER = () => {
         const submissionData = {
             ...formData,
             salary: formData.salary ? parseFloat(formData.salary) : null,
-            // Only split if there is text, otherwise send an empty array
+            
             key_responsibilities: formData.key_responsibilities.trim() 
                 ? formData.key_responsibilities.split(',').map(item => item.trim()) 
                 : [],
@@ -93,7 +93,7 @@ const REGISTER = () => {
                     <textarea name="requirements" value={formData.requirements} onChange={handleChange} />
                 </div>
 
-                <button type="submit" className='form-submit-button'>Save Job to Database</button>
+                <button type="submit" className='form-submit-button'>Save Job to Post</button>
             </form>
         </div>
     );

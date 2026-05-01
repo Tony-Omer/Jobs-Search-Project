@@ -5,6 +5,8 @@ import OPTIONS from './components/options';
 import JOBHEADER from './components/job-header';
 import JOBPOSTS from './components/JOBPOSTS';
 import Employer from './components/Employer'; // Capitalized the 'E'
+import JobFind from './components/JobFind';
+
 
 function App() {
   return (
@@ -24,7 +26,10 @@ function App() {
         } />
 
         {/* The Employer Route: Only shows the Employer component */}
-        <Route path="/employer" element={<Employer />} /> 
+        <Route path="/employer" element={<Employer />} />
+
+        {/* The JobFind Route: Only shows the JobFind component */}
+        <Route path="/jobfind" element={<JobFind />} /> 
       </Routes>
     </div>
   );
