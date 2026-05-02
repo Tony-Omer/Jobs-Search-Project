@@ -23,16 +23,17 @@ const saltRounds = 10;
 
 
 // Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(session({ secret: 'your_secret_key', resave: false, saveUninitialized: false }));
-app.use(passport.initialize());
-app.use(passport.session());
 app.use(cors({
     origin: 'http://localhost:5173', // Vite's default port
     methods: ['GET', 'POST'],
     credentials: true
 }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(session({ secret: 'your_secret_key', resave: false, saveUninitialized: false }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 
 app.use(express.static('public'));
@@ -108,6 +109,32 @@ app.post('/api/jobs', async (req, res) => {
 
 
 
+
+
+
+
+
+// GET route to fetch jobs (and handle search)
+app.get('/api/jobs', async (req, res) => {
+    try {
+        const { search } = req.query; // Get the search term from URL (?search=...)
+        let result;
+
+        if (search) {
+            // Use ILIKE for case-insensitive search in Postgres
+            const query = "SELECT * FROM jobs WHERE job_title ILIKE $1 OR job_description ILIKE $1";
+            result = await pool.query(query, [`%${search}%`]);
+        } else {
+            // Just get everything if no search term
+            result = await pool.query("SELECT * FROM jobs ORDER BY id DESC");
+        }
+
+        res.json(result.rows); // Send the array of jobs to React
+    } catch (err) {
+        console.error("Error fetching jobs:", err.message);
+        res.status(500).send('Server Error');
+    }
+});
 
 
 

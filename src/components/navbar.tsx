@@ -10,9 +10,9 @@ function NAVBAR() {
 
   return (
     <nav className="navbar">
-      <a href="/jobs">
+      
         <h1>Job Finder</h1>
-      </a>
+      
 
 
      
