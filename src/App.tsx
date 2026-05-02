@@ -2,10 +2,10 @@ import { Routes, Route } from 'react-router-dom';
 import NAVBAR from './components/navbar';
 import FRONTPAGE from './components/frontpage';
 import OPTIONS from './components/options';
-import JOBHEADER from './components/job-header';
-import JOBPOSTS from './components/JOBPOSTS';
-import Employer from './components/Employer'; // Capitalized the 'E'
+import Employer from './components/Employer'; 
 import JobFind from './components/JobFind';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
 
 
 function App() {
@@ -19,8 +19,6 @@ function App() {
         <Route path="/" element={
           <>
             <FRONTPAGE />
-            <JOBHEADER />
-            <JOBPOSTS />
             <OPTIONS />
           </>
         } />
@@ -30,6 +28,12 @@ function App() {
 
         {/* The JobFind Route: Only shows the JobFind component */}
         <Route path="/jobfind" element={<JobFind />} /> 
+
+        {/* The AboutUs Route: Only shows the AboutUs component */}
+        <Route path="/about" element={<AboutUs />} />
+
+        {/* The ContactUs Route: Only shows the ContactUs component */}
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </div>
   );
