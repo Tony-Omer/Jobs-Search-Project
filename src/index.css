@@ -697,6 +697,13 @@ html, body {
   font-size: 18px;
 }
 
+.job-post .box {
+  width: 90%;
+  min-height: 150px;
+  height: auto;
+  padding: 8px;
+}
+
 
 
 
@@ -1009,6 +1016,8 @@ html, body {
   color: var(--text-main);
   letter-spacing: -0.04em;
   margin-bottom: 16px;
+  color: #007aff;
+  text-shadow: none;
 }
 
 .job-header p {

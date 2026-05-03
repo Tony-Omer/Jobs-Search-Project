@@ -60,7 +60,9 @@ const JobFind = () => {
       {/* 3. Map through the jobs state here in the JSX */}
       <div className="jobs-list">
         {jobs.map((job) => (
+          
           <div className="job-post" key={job.id}>
+
             <div className="firstBox box">
               <div className="image">
                 <i className="fa-solid fa-building building"></i>
