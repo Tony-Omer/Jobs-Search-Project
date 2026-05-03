@@ -286,7 +286,6 @@ html, body {
 
 .container {
   width: 500px;
-  
   height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -310,10 +309,35 @@ html, body {
   .container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 50%;
+    height: 600px;
     padding: 15px;
     gap: 20px;
+    height: auto;
   }
+
+
+
+  .container .description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+  }
+
+
+
+
+  .container .description a {
+    margin-top: 20px;
+  }
+
 }
 
 
@@ -345,9 +369,8 @@ html, body {
 }
 
 .container .description a {
-  position: absolute;
   bottom: 60px;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 0px;
   padding: 10px 25px;
   background-color: #007aff;
