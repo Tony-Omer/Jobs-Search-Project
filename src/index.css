@@ -431,7 +431,6 @@ html, body {
 
 
 
-
 .job-post{
   max-width: 70%;
   min-height: 300px;
@@ -442,7 +441,7 @@ html, body {
   display: flex;
   flex-direction: column;
   padding: 0px;
-
+  margin-bottom: 90px;
 
 }
 
