@@ -24,7 +24,7 @@ const saltRounds = 10;
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:5173', // Vite's default port
+    origin: 'http://localhost:5173', 
     methods: ['GET', 'POST'],
     credentials: true
 }));
