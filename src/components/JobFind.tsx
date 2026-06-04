@@ -12,7 +12,7 @@ const JobFind = () => {
       const response = await fetch(`http://127.0.0.1:5000/api/jobs?search=${searchTerm}`);
       const data = await response.json();
       
-      // 2. Save the array of data to our state
+      // 2. Save the array of data to the jobs state
       setJobs(data); 
     } catch (error) {
       console.error("Fetch error:", error);
