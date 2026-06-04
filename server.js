@@ -72,7 +72,7 @@ const testConnection = async () => {
     } catch (err) {
         console.error('❌ Database Connection Error details:');
         console.error('Message:', err.message);
-        console.error('Code:', err.code); // This code tells us exactly what's wrong (e.g., 28P01 for wrong password)
+        console.error('Code:', err.code);
     }
 };
 
